@@ -6,7 +6,7 @@ module.exports = {
   },
   "title": "someblogs",
   "description": "",
-  "dest": "public",
+  "dest": "",
   "head": [
     [
       "link",
@@ -61,14 +61,14 @@ module.exports = {
         ]
       }
     ],
-    "sidebar": {
-      "/docs/theme-reco/": [
-        "",
-        "theme",
-        "plugin",
-        "api"
-      ]
-    },
+    // "sidebar": {
+    //   "/docs/theme-reco/": [
+    //     "",
+    //     "theme",
+    //     "plugin",
+    //     "api"
+    //   ]
+    // },
     "type": "blog",
     "blogConfig": {
       "category": {
