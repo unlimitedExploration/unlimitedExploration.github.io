@@ -6,7 +6,7 @@ module.exports = {
   },
   "title": "someblogs",
   "description": "",
-  "dest": "",
+  "dest": "docs",
   "head": [
     [
       "link",
