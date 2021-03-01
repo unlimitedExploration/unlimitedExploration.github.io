@@ -5,7 +5,7 @@ module.exports = {
     }
   },
   "title": "someblogs",
-  "description": "",
+  "description": "I need to believe that something extraordinary is possible.",
   "dest": "docs",
   "head": [
     [
