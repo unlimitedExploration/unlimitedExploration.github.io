@@ -64,7 +64,7 @@ module.exports = config({
                 {
                   title: "springboot",
                   prefix: "springboot/",
-                  children: ["springboot-https"]
+                  children: ["springboot-https","jeecgboot","log","maven-jar"]
                 },
                 "grails-file",
               ],
