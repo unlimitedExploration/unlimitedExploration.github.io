@@ -2,7 +2,7 @@ const { config } = require("vuepress-theme-hope");
 
 module.exports = config({
   title: "Some Notes",
-  description: "Everything's gonna be all right.",
+  description: "Everything's gonna be all right",
 
   dest: "docs/.vuepress/dist",
 
