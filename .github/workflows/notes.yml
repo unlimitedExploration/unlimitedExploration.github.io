@@ -1,10 +1,10 @@
-name: GitHub Actions Notes
+name: docs
 
 on:
   # 每当 push 到 main 分支时触发部署
   push:
     branches:
-      - gh-pages
+      - main
 
 jobs:
   docs:
@@ -50,7 +50,7 @@ jobs:
           # 部署到 gh-pages 分支
           target_branch: gh-pages
           # 部署目录为 VuePress 的默认输出目录
-          build_dir: ./docs
+          build_dir: docs/.vuepress/dist
         env:
           # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}

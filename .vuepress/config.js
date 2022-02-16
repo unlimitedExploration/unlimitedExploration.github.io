@@ -4,7 +4,7 @@ module.exports = config({
   title: "Some Notes",
   description: "Everything's gonna be all right.",
 
-  dest: ".vuepress/dist",
+  dest: "docs/.vuepress/dist",
 
   head: [
     [
@@ -54,6 +54,11 @@ module.exports = config({
             icon: "html",
             link: "/front-end/",
           },
+          {
+            text: "其他",
+            icon: "others",
+            link: "/others/",
+          },
         ],
         sidebar: {
           "/java/": [
@@ -81,6 +86,17 @@ module.exports = config({
                   children: ["uniapp"]
                 },
                 "nexttick",
+                "echarts-tooltip",
+                "vcharts-extend"
+              ],
+            }
+          ],
+          "/others/": [
+            {
+              title: "其他",
+              icon: "others",
+              children: [
+                "virtualbox"
               ],
             }
           ]
