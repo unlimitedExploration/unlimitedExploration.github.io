@@ -4,7 +4,7 @@ module.exports = config({
   title: "Some Notes",
   description: "Everything's gonna be all right.",
 
-  dest: ".vuepress/dist",
+  dest: "docs/.vuepress/dist",
 
   head: [
     [
