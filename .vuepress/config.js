@@ -2,9 +2,9 @@ const { config } = require("vuepress-theme-hope");
 
 module.exports = config({
   title: "Some Notes",
-  description: "Everything's gonna be all right",
+  description: "Everything's gonna be all right.",
 
-  dest: "docs/.vuepress/dist",
+  dest: ".vuepress/dist",
 
   head: [
     [
@@ -27,11 +27,7 @@ module.exports = config({
   locales: {
     "/": {
       lang: "zh-CN",
-    },
-    "/en/": {
-      title: "Theme Demo",
-      description: "vuepress-theme-hope demo",
-    },
+    }
   },
 
   themeConfig: {
@@ -102,7 +98,7 @@ module.exports = config({
           ]
         },
       },
-      "/en/": {
+      /* "/en/": {
         nav: [
           { text: "Blog Home", link: "/en/", icon: "home" },
           { text: "Project Home", link: "/en/home/", icon: "home" },
@@ -132,7 +128,7 @@ module.exports = config({
             },
           ],
         },
-      },
+      }, */
     },
 
     blog: {
