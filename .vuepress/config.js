@@ -55,6 +55,11 @@ module.exports = config({
             icon: "others",
             link: "/others/",
           },
+          {
+            text: "Docs",
+            link: "https://vuepress-theme-hope.github.io/",
+            icon: "note",
+          },
         ],
         sidebar: {
           "/java/": [
