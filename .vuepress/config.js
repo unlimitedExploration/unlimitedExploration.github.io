@@ -68,6 +68,11 @@ module.exports = config({
               icon: "java",
               children: [
                 {
+                  title: "docker",
+                  prefix: "docker/",
+                  children: ["docker-jeecg"]
+                },
+                {
                   title: "springboot",
                   prefix: "springboot/",
                   children: ["springboot-https","jeecgboot","log","maven-jar"]
