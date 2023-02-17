@@ -93,7 +93,8 @@ module.exports = config({
                 },
                 "nexttick",
                 "echarts-tooltip",
-                "vcharts-extend"
+                "vcharts-extend",
+                "node230217"
               ],
             }
           ],
