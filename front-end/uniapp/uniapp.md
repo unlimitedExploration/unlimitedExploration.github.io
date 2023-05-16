@@ -1,6 +1,6 @@
 ---
 icon: page
-title: 初次使用uniapp开发h5页面
+title: 初次使用uniapp
 author: liuzh
 time: 2021-02-25
 tag: 
@@ -137,7 +137,7 @@ tag:
 ```
 
 ### 4. 跳转到外部页面
-使用`uni.navigateTo(OBJECT)`只能跳转到应用内的某个页面，跳转外部页面要使用`web-view`组件
+使用`uni.navigateTo(OBJECT)`只能跳转到应用内的某个页面，跳转外部页面要使用`web-view`组件，如果想打开 web url，在App平台可以使用 `plus.runtime.openURL`或`web-view`组件；H5平台使用 `window.open`；小程序平台使用`web-view`组件（url需在小程序的联网白名单中）。在hello uni-app中有个组件ulink.vue已对多端进行封装，可参考。
 
 ### 5. js Form 表单提交
 由于项目中需要在请求接口后获取到表单参数值然后自动提交表单，使用 uniapp 的 form 无法实现，用 js 操作 dom 来提交：
@@ -163,3 +163,14 @@ mounted() {
 	a.style.display = 'none'
 },
 ```
+
+### 7. 调用第三方程序打开指定的URL
+```javascript
+void plus.runtime.openURL( url, errorCB, identity );
+```
+#### 参数：
+- url: ( String ) 必选 要打开的URL地址
+- errorCB: ( OpenErrorCallback ) 可选 打开URL地址失败的回调  
+  打开指定URL地址失败时回调，并返回失败信息。
+- identity: ( String ) 可选 指定打开URL地址的程序名称  
+  在iOS平台此参数被忽略，在Android平台为程序包名，如果指定的包名不存在，则打开URL地址失败。
