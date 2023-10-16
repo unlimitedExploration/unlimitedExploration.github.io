@@ -174,3 +174,12 @@ void plus.runtime.openURL( url, errorCB, identity );
   打开指定URL地址失败时回调，并返回失败信息。
 - identity: ( String ) 可选 指定打开URL地址的程序名称  
   在iOS平台此参数被忽略，在Android平台为程序包名，如果指定的包名不存在，则打开URL地址失败。
+
+### 8. vue 项目打包安卓 app 后，刷新页面的方法
+**给组件增加一个 key 属性，key 改变时会触发组件的重新渲染**
+```
+<view class="main" :key="mainKey">
+</view>
+...
+this.mainKey += 1
+```
