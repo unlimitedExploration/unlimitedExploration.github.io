@@ -2,7 +2,7 @@ const { config } = require("vuepress-theme-hope");
 
 module.exports = config({
   title: "Some Notes",
-  description: "Everything's gonna be all right.",
+  description: "You only live once.",
 
   dest: "docs/.vuepress/dist",
 
@@ -56,6 +56,11 @@ module.exports = config({
             link: "/others/",
           },
           {
+            text: "Python",
+            icon: "python",
+            link: "/python/",
+          },
+          {
             text: "Docs",
             link: "https://vuepress-theme-hope.github.io/",
             icon: "note",
@@ -104,6 +109,15 @@ module.exports = config({
               icon: "others",
               children: [
                 "virtualbox"
+              ],
+            }
+          ],
+          "/python/": [
+            {
+              title: "Python",
+              icon: "python",
+              children: [
+                "scripts","treelike","sql-export","sql-import","split-data"
               ],
             }
           ]
