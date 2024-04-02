@@ -108,7 +108,7 @@ module.exports = config({
               title: "其他",
               icon: "others",
               children: [
-                "virtualbox"
+                "virtualbox","vmvare-extend"
               ],
             }
           ],
